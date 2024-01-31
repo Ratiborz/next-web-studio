@@ -15,6 +15,9 @@ export default function Navigation() {
         <li className={clsx(s.item, { [s.disabled]: pathname === '/about' })}>
           <Link href="/about">О компании</Link>
         </li>
+        <li className={clsx(s.item, { [s.disabled]: pathname === '/portfolio' })}>
+          <Link href="/portfolio">Портфолио</Link>
+        </li>
         <li className={clsx(s.item, { [s.disabled]: pathname === '/contacts' })}>
           <Link href="/contacts">Контакты</Link>
         </li>

@@ -1,4 +1,5 @@
 'use client';
+
 import { PropsWithChildren } from 'react';
 import Head from 'next/head';
 import Navigation from '../navigation/navigation';
@@ -25,17 +26,7 @@ export default function Layout({ children }: PropsWithChildren) {
           </Link>
           <Navigation />
         </header>
-        <main className={s.main}>
-          {children}
-          <h1>О компании</h1>
-          <div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias facilis quasi magni laudantium
-              reprehenderit doloremque cumque blanditiis at nemo, maxime ullam esse hic id eius nihil voluptatem
-              reiciendis ipsam quo.
-            </p>
-          </div>
-        </main>
+        <main className={s.main}>{children}</main>
         <footer className={s.footer}>&copy; 2023 Web studio</footer>
       </div>
     </>
