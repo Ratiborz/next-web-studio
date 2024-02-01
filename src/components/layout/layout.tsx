@@ -1,5 +1,4 @@
 'use client';
-
 import { PropsWithChildren } from 'react';
 import Head from 'next/head';
 import Navigation from '../navigation/navigation';

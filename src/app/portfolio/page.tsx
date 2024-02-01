@@ -5,8 +5,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import s from './portfolio.module.css';
 import { useRouter } from 'next/navigation';
-import { prepareData } from '@/utils/prepareData';
-import { PHOTOS_API_URL, getServerSideProps } from '@/utils/getServerSideRendering';
+import { PHOTOS_API_URL, prepareData } from '@/utils/prepareData';
 
 export interface PortfolioItem {
   albumId: number;
